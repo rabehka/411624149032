@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS Practice</title>
+</head>
+
+<body>
+
+    <input type="text" id="inp">
+    <button id="btn">Click Me</button>
+
+    <script>
+        let name = "rabekha";
+        console.log(name);
+
+        let age = 19;
+        console.log(age);
+
+        let isStudent = true;
+        console.log(isStudent);
+
+        let arr = [1, 2, 3, 4, 5];
+
+        for (let i = 0; i < arr.length; i++) {
+            console.log(arr[i] * 2);
+        }
+
+        function add(a, b) {
+            console.log(a + b);
+        }
+
+        add(5, 5);
+
+        let x = (nam) => console.log("hey", nam);
+        x("bae");
+
+        let detail = {
+            n: "siva",
+            a: 24,
+            address: {
+                vill: "xyz",
+                city: "chennai",
+                pincode: 605933
+            }
+        };
+
+        console.log(detail.address.city);
+
+        document.getElementById("btn").addEventListener("click", function () {
+            let z = document.getElementById("inp").value;
+            console.log(z);
+        });
+    </script>
+
+</body>
+
+</html>
